@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<section id="chicago" style="background: white">
-  <div id="Container" class="container-non-responsive">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="portfolio">
-              <div class="container col-lg-12" data-myorder="1">
-                <div class='tableauPlaceholder' id='viz1710567853310' style='position: relative'>
-                  <noscript><a href='#'>
-            <img alt='Company ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SC&#47;SCBook_17105332034130&#47;Company&#47;1_rss.png' style='border: none' />
-          </a>
+<html>
+  <head>
+    <title>Call Center Project</title>
+  </head>
+    <div class='tableauPlaceholder' id='viz1710567853310' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Company ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SC&#47;SCBook_17105332034130&#47;Company&#47;1_rss.png' style='border: none' />
+        </a>
         </noscript>
         <object class='tableauViz'  style='display:none;'>
           <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
           <param name='embed_code_version' value='3' />
           <param name='site_root' value='' />
-          <param name='name' value='Call Center Project' />
+          <param name='name' value='SCBook_17105332034130&#47;Company' />
           <param name='tabs' value='no' />
           <param name='toolbar' value='yes' />
           <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SC&#47;SCBook_17105332034130&#47;Company&#47;1.png' />
