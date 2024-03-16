@@ -1,4 +1,5 @@
 # My Dashboards
+<!DOCTYPE html>
 
 <html>
   <head>
