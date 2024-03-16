@@ -1,4 +1,5 @@
 # My Dashboards
+
 <!DOCTYPE html>
 
 <html>
@@ -29,10 +30,10 @@
         </object>
       </div>
   
-      <script type='text/javascript'>
+<script type='text/javascript'>   
         var divElement = document.getElementById('viz1710567853310');
         var vizElement = divElement.getElementsByTagName('object')[0];
-        if ( divElement.offsetWidth > 500 ) {
+        if ( divElement.offsetWidth > 800) {
           vizElement.style.width='1920px';vizElement.style.height='1107px';
         } else if ( divElement.offsetWidth > 500 ) { 
           vizElement.style.width='1920px';vizElement.style.height='1107px';
