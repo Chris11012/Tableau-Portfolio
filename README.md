@@ -34,9 +34,9 @@
         var divElement = document.getElementById('viz1710567853310');
         var vizElement = divElement.getElementsByTagName('object')[0];
         if ( divElement.offsetWidth > 800) {
-          vizElement.style.width='1200px';vizElement.style.height='1107px';
+          vizElement.style.width='1920px';vizElement.style.height='1107px';
         } else if ( divElement.offsetWidth > 500 ) { 
-          vizElement.style.width='1200px';vizElement.style.height='1107px';
+          vizElement.style.width='1920px';vizElement.style.height='1107px';
         } else { 
                 vizElement.style.width='100%';
               vizElement.style.height='1327px';}                     
