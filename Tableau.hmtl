@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>Call Center Project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Theme overrides: make theme containers full-width and reduce extra padding -->
   <style>
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
-    .wrap{max-width:1100px;margin:0 auto;padding:16px}
-    h1{margin:0 0 12px}
+    /* ----- Global reset/typography ----- */
+    html,body{margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;color:#111827}
+
+    /* ----- Break out of theme containers (works for Cayman/Minimal/Slate/Dinky/Primer) ----- */
+    /* Common wrappers */
+    .container, .container-lg, .wrapper, .inner, .post, .page, .main-content,
+    .page-header, .site-footer { max-width:none !important; width:100% !important; margin:0 !important; }
+    /* Padding: keep small gutter on content but remove heavy theme padding */
+    .main-content{padding:16px !important; box-sizing:border-box;}
+    .page-header{padding:12px 16px !important;}
+    .site-footer{padding:12px 16px !important;}
+
+    /* Cayman-specific title/tagline */
+    .project-name, .project-tagline { max-width:none !important; margin:0 !important; }
+
+    /* Optional: tidy the dark header bar you have */
+    .page-header{background:#111827;color:#fff}
+    .project-name{font-size:1.25rem}
+    .project-tagline{opacity:.8}
+
+    /* ----- Page heading and spacing ----- */
+    h1{margin:12px 0}
+
+    /* ----- Tableau responsive frame (16:9 by default) ----- */
     .frame{position:relative;width:100%;padding-top:56.25%;background:#f3f4f6;border-radius:8px;overflow:hidden}
     .frame .tableauPlaceholder,.frame object{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
+
+    /* Make images/charts inside theme content never overflow */
+    img,svg,canvas,iframe{max-width:100%;height:auto}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Call Center Project</h1>
+  <!-- If your theme renders a header automatically, you can keep this minimal content -->
+  <main class="main-content">
+    <h1>My Dashboards</h1>
+
     <div class="frame">
       <div class="tableauPlaceholder" id="viz">
         <noscript>
           <a href="https://public.tableau.com/views/SCBook_17105332034130/Company">
-            <img alt="Company" src="https://public.tableau.com/static/images/SC/SCBook_17105332034130/Company/1.png" style="border:none" />
+            <img alt="Company" src="https://public.tableau.com/static/images/SC/SCBook_17105332034130/Company/1.png" style="border:none"/>
           </a>
         </noscript>
         <object class="tableauViz">
@@ -40,7 +69,7 @@
         </object>
       </div>
     </div>
-  </div>
+  </main>
 
   <script>
     (function(){
