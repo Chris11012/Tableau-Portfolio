@@ -1,3 +1,4 @@
 Title: Christopher Douglas
-Show_downloads: false
-theme: jekyll-theme-al-folio
+remote_theme: alshedivat/al-folio
+plugins:
+  - jekyll-remote-theme
