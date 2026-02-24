@@ -7,7 +7,54 @@
 
   <!-- Slate override CSS -->
   <style>
-    /* (THE OVERRIDE CODE ABOVE GOES HERE) */
+    
+.container,
+.inner,
+.wrapper,
+header.site-header,
+footer.site-footer,
+section {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Main content spacing */
+.main-content {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+}
+
+/* The big dark header bar (optional tidy) */
+header.site-header {
+    background: #111827 !important;
+    padding: 20px !important;
+}
+
+/* ----- Tableau responsive frame ----- */
+.frame {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;  /* 16:9 ratio */
+    background: #f3f4f6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Make Tableau embed scale */
+.frame .tableauPlaceholder,
+.frame object {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+}
+
   </style>
 </head>
 
