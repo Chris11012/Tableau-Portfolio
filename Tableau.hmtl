@@ -1,83 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8">
   <title>Call Center Project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Theme overrides: make theme containers full-width and reduce extra padding -->
+  <!-- Slate override CSS -->
   <style>
-    /* ----- Global reset/typography ----- */
-    html,body{margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;color:#111827}
-
-    /* ----- Break out of theme containers (works for Cayman/Minimal/Slate/Dinky/Primer) ----- */
-    /* Common wrappers */
-    .container, .container-lg, .wrapper, .inner, .post, .page, .main-content,
-    .page-header, .site-footer { max-width:none !important; width:100% !important; margin:0 !important; }
-    /* Padding: keep small gutter on content but remove heavy theme padding */
-    .main-content{padding:16px !important; box-sizing:border-box;}
-    .page-header{padding:12px 16px !important;}
-    .site-footer{padding:12px 16px !important;}
-
-    /* Cayman-specific title/tagline */
-    .project-name, .project-tagline { max-width:none !important; margin:0 !important; }
-
-    /* Optional: tidy the dark header bar you have */
-    .page-header{background:#111827;color:#fff}
-    .project-name{font-size:1.25rem}
-    .project-tagline{opacity:.8}
-
-    /* ----- Page heading and spacing ----- */
-    h1{margin:12px 0}
-
-    /* ----- Tableau responsive frame (16:9 by default) ----- */
-    .frame{position:relative;width:100%;padding-top:56.25%;background:#f3f4f6;border-radius:8px;overflow:hidden}
-    .frame .tableauPlaceholder,.frame object{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
-
-    /* Make images/charts inside theme content never overflow */
-    img,svg,canvas,iframe{max-width:100%;height:auto}
+    /* (THE OVERRIDE CODE ABOVE GOES HERE) */
   </style>
 </head>
+
 <body>
-  <!-- If your theme renders a header automatically, you can keep this minimal content -->
   <main class="main-content">
     <h1>My Dashboards</h1>
 
     <div class="frame">
       <div class="tableauPlaceholder" id="viz">
-        <noscript>
-          <a href="https://public.tableau.com/views/SCBook_17105332034130/Company">
-            <img alt="Company" src="https://public.tableau.com/static/images/SC/SCBook_17105332034130/Company/1.png" style="border:none"/>
-          </a>
-        </noscript>
         <object class="tableauViz">
           <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
-          <param name="embed_code_version" value="3"/>
-          <param name="site_root" value=""/>
           <param name="name" value="SCBook_17105332034130/Company"/>
-          <param name="tabs" value="no"/>
-          <param name="toolbar" value="yes"/>
-          <param name="static_image" value="https://public.tableau.com/static/images/SC/SCBook_17105332034130/Company/1.png"/>
-          <param name="animate_transition" value="yes"/>
-          <param name="display_static_image" value="yes"/>
-          <param name="display_spinner" value="yes"/>
-          <param name="display_overlay" value="yes"/>
-          <param name="display_count" value="yes"/>
-          <param name="language" value="en-US"/>
-          <param name="filter" value="publish=yes"/>
         </object>
       </div>
     </div>
   </main>
 
   <script>
-    (function(){
-      var p=document.getElementById('viz'), o=p.getElementsByTagName('object')[0];
-      o.style.width='100%'; o.style.height='100%';
-      var s=document.createElement('script'); s.src='https://public.tableau.com/javascripts/api/viz_v1.js';
-      o.parentNode.insertBefore(s,o);
-    })();
+    var o = document.querySelector(".tableauViz");
+    o.style.width = "100%";
+    o.style.height = "100%";
+    var s = document.createElement("script");
+    s.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    o.parentNode.insertBefore(s, o);
   </script>
 </body>
 </html>
